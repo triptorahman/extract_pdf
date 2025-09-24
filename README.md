@@ -23,6 +23,17 @@ php artisan tinker
 ```
 
 
+Then execute any of the following commands:
+```php
+process_pdf('storage/pdf_client_test/ZieglerPdfAssistant_1.pdf');
+process_pdf('storage/pdf_client_test/ZieglerPdfAssistant_2.pdf');
+process_pdf('storage/pdf_client_test/TransalliancePdfAssistant_1.pdf');
+process_pdf('storage/pdf_client_test/TransalliancePdfAssistant_2.pdf');
+```
+
+
+
+
 ====================================================================================================
 
 # THE GOAL
@@ -38,6 +49,17 @@ format for `createOrder()` parameter `$data` is defined as JSON schema: `storage
 If the class definition is set up correctly, calling `process_pdf('/path/to/some.pdf')` from the
 Tinker console will return a properly structured associative array. Otherwise, some error with be
 thrown.
+
+
+====================================================================================================
+
+# FEATURES
+
+- **Web Interface**: Clean, responsive UI for easy PDF processing with real-time results
+- **Command Line Support**: Integration with Laravel Tinker for direct command execution
+- **Multiple PDF Support**: Handles various PDF formats from different logistics providers
+- **Real-time Processing**: Instant display of extracted data in formatted JSON
+- **Error Handling**: Comprehensive error reporting and validation
 
 
 ====================================================================================================
@@ -59,3 +81,5 @@ thrown.
  - use `uncomma()` to deal with numbers that may use a decimal comma (see `app/Helpers/Helper.php`)
 
  - use `App\GeonamesCountry::getIso()` to convert country names to ISO codes
+
+
