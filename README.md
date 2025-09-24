@@ -55,10 +55,8 @@ thrown.
 
 # FEATURES
 
-- **Web Interface**: Clean, responsive UI for easy PDF processing with real-time results
 - **Command Line Support**: Integration with Laravel Tinker for direct command execution
 - **Multiple PDF Support**: Handles various PDF formats from different logistics providers
-- **Real-time Processing**: Instant display of extracted data in formatted JSON
 - **Error Handling**: Comprehensive error reporting and validation
 
 
